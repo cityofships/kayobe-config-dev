@@ -1,5 +1,6 @@
 ---
 # Kayobe global configuration.
+disable_selinux_do_reboot: false
 
 ###############################################################################
 # Local path configuration (Ansible control host).
