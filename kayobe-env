@@ -34,4 +34,4 @@ export KOLLA_SOURCE_PATH=${KOLLA_SOURCE_PATH:-${base_path}/src/kolla-ansible}
 # Path to the kolla virtual environment.
 # NOTE: This should not be in the Vagrant shared directory, as there are
 # issues with symlinks on Windows hosts.
-export KOLLA_VENV_PATH=~/kolla-venv
+#export KOLLA_VENV_PATH=~/kolla-venv
