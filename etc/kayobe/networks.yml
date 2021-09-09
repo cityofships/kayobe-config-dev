@@ -81,14 +81,27 @@ cleaning_net_name: aio
 # Network definitions.
 
 # All-in-one network.
-aio_cidr: 192.168.33.0/24
-aio_allocation_pool_start: 192.168.33.3
-aio_allocation_pool_end: 192.168.33.30
-aio_neutron_allocation_pool_start: 192.168.33.31
-aio_neutron_allocation_pool_end: 192.168.33.127
-aio_inspection_allocation_pool_start: 192.168.33.128
-aio_inspection_allocation_pool_end: 192.168.33.254
-aio_vip_address: 192.168.33.2
+aio_cidr: 10.209.0.0/16
+aio_allocation_pool_start: 10.209.2.0
+aio_allocation_pool_end: 10.209.200.255
+# aio_neutron_allocation_pool_start: 10.0.3.31
+# aio_neutron_allocation_pool_end: 10.0.3.127
+# aio_inspection_allocation_pool_start: 10.0.3.128
+# aio_inspection_allocation_pool_end: 10.0.3.254
+aio_vip_address: 10.209.200.255
+aio_gateway: 10.209.0.1
+
+# public_cidr: "{{ aio_public_cidr }}"
+# public_gateway: "{{ aio_public_gateway }}"
+# public_allocation_pool_start: 0.0.0.0
+# public_allocation_pool_end: 0.0.0.0
+public_vip_address: "{{ aio_public_address }}"
+# # FIXME: This is referenced in kolla globals
+public_net_fqdn: "{{ public_vip_address }}"
+
+aio_public_address: 10.209.200.255
+aio_public_cidr: 10.209.0.0/16
+aio_public_gateway: 10.209.0.1
 
 ###############################################################################
 # Network virtual patch link configuration.

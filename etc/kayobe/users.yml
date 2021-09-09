@@ -5,6 +5,18 @@
 # List of users to create. This should be in a format accepted by the
 # singleplatform-eng.users role.
 #users_default:
+users_default:
+  - username: stack
+    name: Kayobe deployment user
+    append: True
+    ssh_key:
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK1Kf1hRYskYfYtXnqnyzD6vFbpKVyUtcxcn2pYL2y+ piotr@stackhpc.com"
+
+  - username: kolla
+    name: Kolla deployment user
+    append: True
+    ssh_key:
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK1Kf1hRYskYfYtXnqnyzD6vFbpKVyUtcxcn2pYL2y+ piotr@stackhpc.com"
 
 ###############################################################################
 # Dummy variable to allow Ansible to accept this file.

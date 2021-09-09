@@ -176,7 +176,7 @@
 #kolla_ansible_target_venv:
 
 # Whether TLS is enabled for the external API endpoints. Default is 'no'.
-#kolla_enable_tls_external:
+kolla_enable_tls_external: False
 
 # Whether TLS is enabled for the internal API endpoints. Default is 'no'.
 #kolla_enable_tls_internal:
@@ -290,7 +290,7 @@
 #kolla_enable_multipathd:
 #kolla_enable_murano:
 #kolla_enable_neutron:
-#kolla_enable_neutron_agent_ha:
+kolla_enable_neutron_agent_ha: False
 #kolla_enable_neutron_bgp_dragent:
 #kolla_enable_neutron_dvr:
 #kolla_enable_neutron_infoblox_ipam_agent:
