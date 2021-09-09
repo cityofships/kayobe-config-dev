@@ -212,7 +212,7 @@ kolla_enable_tls_external: False
 #kolla_enable_ceilometer:
 #kolla_enable_ceilometer_ipmi:
 #kolla_enable_cells:
-#kolla_enable_central_logging:
+kolla_enable_central_logging: True
 #kolla_enable_chrony:
 #kolla_enable_cinder:
 #kolla_enable_cinder_backend_hnas_nfs:
@@ -228,6 +228,7 @@ kolla_enable_tls_external: False
 #kolla_enable_designate:
 #kolla_enable_destroy_images:
 #kolla_enable_elasticsearch:
+kolla_enable_elasticsearch_curator: True
 #kolla_enable_etcd:
 #kolla_enable_fluentd:
 #kolla_enable_freezer:
@@ -273,7 +274,7 @@ kolla_enable_tls_external: False
 #kolla_enable_karbor:
 #kolla_enable_keepalived:
 #kolla_enable_keystone:
-#kolla_enable_kibana:
+kolla_enable_kibana: True
 #kolla_enable_kuryr:
 #kolla_enable_magnum:
 #kolla_enable_manila:
@@ -315,7 +316,7 @@ kolla_enable_neutron_agent_ha: False
 #kolla_enable_ovs_dpdk:
 #kolla_enable_panko:
 #kolla_enable_placement:
-#kolla_enable_prometheus:
+kolla_enable_prometheus: True
 #kolla_enable_qdrouterd:
 #kolla_enable_qinling:
 #kolla_enable_rabbitmq:
