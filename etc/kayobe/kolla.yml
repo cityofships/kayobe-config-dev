@@ -5,7 +5,7 @@
 # Kolla installation.
 
 # Type of Kolla control installation. One of 'binary' or 'source'.
-#kolla_ctl_install_type:
+kolla_ctl_install_type: source
 
 # Path to directory for kolla source code checkout.
 #kolla_source_path:
@@ -28,7 +28,7 @@
 
 # Type of Kolla-ansible control installation. One of 'binary' or 'source'.
 # Default is 'source'.
-#kolla_ansible_ctl_install_type:
+kolla_ansible_ctl_install_type: source
 
 # Path to directory for kolla-ansible source code checkout.
 # Default is $KOLLA_SOURCE_PATH, or $PWD/src/kolla-ansible if
@@ -62,17 +62,17 @@
 # Kolla configuration.
 
 # Kolla base container image distribution. Default is 'centos'.
-#kolla_base_distro:
+kolla_base_distro: centos
 
 # Kolla container image type: binary or source. Default is 'binary'.
-#kolla_install_type:
+kolla_install_type: source
 
 # URL of docker registry to use for Kolla images. Default is not set, in which
 # case Dockerhub will be used.
-#kolla_docker_registry:
+kolla_docker_registry: quay.io
 
 # Docker namespace to use for Kolla images. Default is 'kolla'.
-#kolla_docker_namespace:
+kolla_docker_namespace: openstack.kolla
 
 # Username to use to access a docker registry. Default is not set, in which
 # case the registry will be used without authentication.
